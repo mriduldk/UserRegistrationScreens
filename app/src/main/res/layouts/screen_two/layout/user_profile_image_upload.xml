@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingHorizontal="16dp"
+    android:id="@+id/relativeLayoutParent">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cabin_bold"
+            android:text="Hi,"
+            android:textColor="@color/subSubTextColor"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/textViewUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="3dp"
+            android:fontFamily="@font/cabin_bold"
+            tools:text="Mridul"
+            android:textColor="@color/textColor"
+            android:textSize="26sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/background_image" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewProfileImage"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_centerHorizontal="true"
+                app:cardCornerRadius="130dp"
+                android:layout_margin="30dp"
+                android:elevation="20dp"
+                app:cardElevation="20dp"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageViewProfileImage"
+                    android:layout_width="240dp"
+                    android:layout_height="240dp"
+                    android:src="@drawable/profile" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabUploadImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/cardViewProfileImage"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="70dp"
+                android:layout_marginBottom="10dp"
+                android:elevation="30dp"
+                app:elevation="30dp"
+                android:src="@drawable/ic_round_add_24" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="3dp"
+            android:fontFamily="@font/cabin_bold"
+            android:text="You're all set"
+            android:textColor="@color/textColor"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="3dp"
+            android:fontFamily="@font/cabin_medium"
+            android:text="Take a minute to upload a profile photo"
+            android:textColor="@color/textColor"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutDisabledButton"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/bg_button"
+        android:backgroundTint="@color/disabledButtonColor"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progress_wheel"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginHorizontal="10dp"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cabin_bold"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="3dp"
+            android:text="Uploading..."
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textViewBtnImageUpload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/bg_button"
+        android:fontFamily="@font/cabin_bold"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="3dp"
+        android:paddingVertical="10dp"
+        android:text="Proceed"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#1DA1F2</color>
+    <color name="colorPrimaryLightDark">#0074BC</color>
+    <color name="colorPrimaryDark">#1d37f2</color>
+    <color name="colorPrimaryLight">#564DB5F4</color>
+
+    <color name="divider">#E1E1E1</color>
+    <color name="divider2">#BCBCBC</color>
+
+
+    <!--SCREEN 1-->
+    <color name="bgColor1">#FFFFFF</color>
+    <color name="textColor">#2C2C2C</color>
+    <color name="subTextColor">#444444</color>
+    <color name="subSubTextColor">#6E6E6E</color>
+    <color name="red">#e36841</color>
+
+
+
+    <!--SCREEN 2-->
+    <color name="disabledButtonColor">#8A8A8A</color>
+    <color name="colorInfo">#5bc0de</color>
+    <color name="colorInfoDisabled">#B55BC0DE</color>
+    <color name="colorBgPrimary">#0275d8</color>
+    <color name="colorSuccess">#5cb85c</color>
+    <color name="colorWaring">#f0ad4e</color>
+    <color name="colorDanger">#d9534f</color>
+    <color name="colorInverse">#292b2c</color>
+    <color name="colorFaded">#f7f7f7</color>
+
+
+
+</resources>
